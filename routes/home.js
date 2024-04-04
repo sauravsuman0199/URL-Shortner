@@ -3,8 +3,8 @@ const router = express.Router()
 const path = require('path')
 
 router.get('/', (req,res)=>{
-    console.log('dirName',__dirName , htmlPath)
-    const htmlPath = path.join(__dirName,'public','index.html')
+    console.log('dirName',__dirname , htmlPath)
+    const htmlPath = path.join(__dirname,'public','index.html')
     res.send(htmlPath)
 
 })
